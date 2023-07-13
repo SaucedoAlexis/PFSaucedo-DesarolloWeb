@@ -7,6 +7,14 @@
 ul,ol{
     list-style: none;
 }
+
+input[type="number"]
+{
+    -webkit-appearance: textfield;
+    margin: 0;
+    appearance: none;
+    -moz-appearance:textfield ;
+}
 .resetmarypad{
     margin: 0;
     padding: 0;
@@ -21,7 +29,12 @@ ul,ol{
     color: blue;
 }
 
-.flex-row{
+.flex-en-linea{
     display: flex;
+    flex-direction: row;
+}
+
+.img-320{
+    max-width: 300px;
 }
 

@@ -8,6 +8,13 @@ ul, ol {
   list-style: none;
 }
 
+input[type=number] {
+  -webkit-appearance: textfield;
+  margin: 0;
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
 .resetmarypad {
   margin: 0;
   padding: 0;
@@ -21,8 +28,13 @@ ul, ol {
   color: blue;
 }
 
-.flex-row {
+.flex-en-linea {
   display: flex;
+  flex-direction: row;
+}
+
+.img-320 {
+  max-width: 300px;
 }
 
 .navbar-brand__img {
@@ -57,7 +69,26 @@ ul, ol {
 }
 
 .footer-ul__img {
-  max-width: 30px;
+  max-height: 30px;
+}
+
+.youtube-icon {
+  height: 30px;
+}
+
+.seccion-que-es-coaching__img {
+  max-width: 300px;
+}
+
+.seccion-descubriendo-disi__img {
+  max-width: 300px;
+}
+
+.manifiesto-seccion-1__ul {
+  list-style: square;
+}
+.manifiesto-seccion-1__ul--first-li {
+  list-style: none;
 }
 
 .imagen-principal {
