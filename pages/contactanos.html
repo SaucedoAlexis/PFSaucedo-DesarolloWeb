@@ -12,111 +12,111 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex gap-1" href="../index.html">
-                    <img src="../img/DISI_logo.png" alt="" class="navbar-brand__img">
-                    <div class="titulo-nav d-grid">
-                        <h1 class="titulo-nav__h1 resetmarypad">
-                            <span class="letra-azul">D</span>I<span class="letra-roja">S</span>I
-                        </h1>
-                        <h2 class="titulo-nav__h2 resetmarypad">Coaching profesional</h2>
-                    </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container maxw-768">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/LogoDISI.png" alt="" class="navbar-brand__img">
                 </a>
+
                 <button class="navbar-toggler resetmarypad" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
                         <a class="nav-link" href="./que_es.html">¿Coaching?</a>
                         <a class="nav-link" href="./metodo.html">Método</a>
                         <a class="nav-link" href="./quienes_somos.html">Sobre nosotros</a>
-                        <a class="nav-link" href="./contactanos.html">Contactanos</a>
+                        <a class="nav-link activo" href="./contactanos.html">Contactanos</a>
                     </div>
                 </div>
+
             </div>
         </nav>
-        <main>
-            <!-- Sección del formulario-->
-            <section>
-                <h3>Contactanos</h3>
-                <form action="">
-                    <div>
-                        <label for="nombrecompleto">Nombre Completo:</label>
-                        <input type="text" name="nombrecompleto" placeholder="Ariel Alberto Gamarro">
-                    </div>
-                    <div>
-                        <label for="edad">Edad:</label>
-                        <input type="number" name="edad" placeholder="Mayor a 18">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="ArielAlberto@gmail.com">
-                    </div>
-                    <div>
-                        <label for="celular">Celular:</label>
-                        <select name="codigopais" id="">
-                            <option value="">País</option>
-                            <option value="Argentina">Argentina(+54)</option>
-                            <option value="Chile">Chile(+56)</option>
-                            <option value="Uruguay">Uruguay(+598)</option>
+    </header>
+    <main>
+        <!-- Sección del formulario-->
+        <section>
+            <h3 class="padding-2-arribajo centrar-texto">Contactanos</h3>
+            <form action="" class="form-contactanos flex-en-columna centrar-caja gap-05">
+                <div class="form-nombre">
+                    <label for="nombrecompleto" class="form-nombre__nombre">Nombre:</label>
+                    <input type="text" name="nombrecompleto" placeholder="Ariel Alberto Gamarro" class="form-nombre__input">
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" placeholder="Mayor a 18">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="ArielAlberto@gmail.com">
+                </div>
+                <div class="form-numero flex-en-columna gap-05">
+                    <label for="celular" class="form-numero__celular">Celular:</label>
+                    <select name="codigopais" id="" class="form-numero__select">
+                        <option value="">País</option>
+                        <option value="Argentina">Argentina(+54)</option>
+                        <option value="Chile">Chile(+56)</option>
+                        <option value="Uruguay">Uruguay(+598)</option>
 
-                        </select>
-                        <input type="number" placeholder="Código de area">
-                        <input type="number" placeholder="numero celular">
-                    </div>
-                    <input type="submit" value="Enviar!">
-                </form>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-titulo flex-en-linea">
+                    </select>
+                    <input type="number" placeholder="Código de area">
+                    <input type="number" placeholder="numero celular">
+                </div>
+                <input type="submit" value="Enviar!" class="boton_rojo resetmarypad centrar-caja">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="centrar-caja footer-titulo flex-en-linea flex-centrar resetmarypad">
+            <a href="./index.html">
                 <img src="../img/DISI_logo.png" alt="" class="footer-titulo__img">
-                <h2 class="footer-titulo__h2 resetmarypad">DISI</h2>
+            </a>
 
-            </div>
-            <p> Brindamos servicios de Coaching con la misión de llevar el éxito a todas las personas.
 
-                Lo hacemos mejorando constantemente el método DISI, brindando apoyo constante, planificación de
-                objetivos,
-                superación de barreras y progresión constante. </p>
-            <h2>Encontranos en las redes</h2>
-            <ul class="footer-ul flex-en-linea resetmarypad">
-                <li>
-                    <a href="https://es-la.facebook.com/">
-                        <img src="../img/iconos_redes_sociales/facebook.png" alt="" class="footer-ul__img">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/">
-                        <img src="../img/iconos_redes_sociales/instagram.png" alt="" class="footer-ul__img">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/">
-                        <img src="../img/iconos_redes_sociales/LinkedIn_logo_initials.png" alt=""
-                            class="footer-ul__img">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com">
-                        <img src="../img/iconos_redes_sociales/twitter.png" alt="" class="footer-ul__img">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com">
-                        <img src="../img/iconos_redes_sociales/Youtube_logo.png" alt=""
-                            class="footer-ul__img youtube-icon">
-                    </a>
-                </li>
-            </ul>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
+
+        </div>
+
+        <p class="centrar-caja"> En DISI brindamos servicios de Coaching con la misión de llevar el éxito a todas las
+            personas.
+
+            Lo hacemos mejorando constantemente el método DISI, brindando apoyo constante, planificación de objetivos,
+            superación de barreras y progresión constante. </p>
+        <h2>Encontranos en las redes</h2>
+        <ul class="footer-ul flex-en-linea resetmarypad flex-centrar">
+            <li>
+                <a href="https://www.facebook.com">
+                    <img src="../img/iconos_redes_sociales/facebook.png" alt="" class="footer-ul__img">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"">
+                    <img src=" ../img/iconos_redes_sociales/instagram.png" alt="" class="footer-ul__img">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com"">
+                    <img src=" ../img/iconos_redes_sociales/LinkedIn_logo_initials.png" alt="" class="footer-ul__img">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com"">
+                    <img src=" ../img/iconos_redes_sociales/twitter.png" alt="" class="footer-ul__img">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com"">
+                    <img src=" ../img/iconos_redes_sociales/Youtube_logo.png" alt=""
+                    class="footer-ul__img youtube-icon">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 

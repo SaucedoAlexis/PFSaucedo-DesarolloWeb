@@ -1,4 +1,96 @@
-.seccion-que-es-coaching__img{
-    max-width: 300px;
+.coaching-img {
+    width: 90%;
+    max-width: 700px;
+}
+
+.tipo-coaching-article__img {
+    display: none;
+}
+
+
+.tipo-coaching-article {
+    padding: 0 1rem;
+    width: 90%;
+
+    &__div {
+        background: linear-gradient(to right, var(--color_D), var(--color_E) 60%);
+        color: var(--color_A);
+        padding: 1rem;
+        border-radius: 15px;
+
+        &--derecha {
+            text-align: end;
+            background: linear-gradient(to left, var(--color_C), var(--color_B) 60%);
+            color: var(--color_A);
+            padding: 1rem;
+            border-radius: 15px;
+        }
+
+    }
+}
+
+.que-proporciona-li {
+    text-align: left;
+    padding: 1rem;
+
+    &__span {
+        font-size: 50px;
+        color: gray;
+        transform: rotate(-25deg);
+        border-radius: 10px;
+        margin-left: 0.2rem;
+    }
+
+    &__p {
+        margin-left: 0.5rem;
+    }
+
+}
+
+
+
+@media (min-width:768px) {
+    .tipo-coaching-article {
+        max-width: 900px;
+        align-self: end;
+
+        &:nth-child(even) {
+            align-self: start;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+
     
+/*Primera seccion*/
+    .coaching-div{
+        max-height: 400px;
+        padding-left: 0.2rem;
+        &__p{
+            font-size: 1.5rem;
+            
+            
+        }
+    }
+    
+    .coaching-img{
+        width: 600px;
+        object-fit: cover;
+    }
+    .articulo-coaching{
+        flex-direction: row;
+        max-width: 1200px;
+        
+        
+    }
+
+    /*Segunda sección*/
+    .tipos-coaching-div{
+        
+    }
+    .tipo-coaching-article{
+        max-width: 1000px;
+    }
+
 }

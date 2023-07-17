@@ -1,0 +1,83 @@
+.seccion-descubriendo-disi__img {
+    width: 90%;
+    
+}
+
+.manifiesto-card {
+    & h3{
+        text-align: center;
+        
+    }
+    & ul {
+        list-style: square;
+        margin: 0;
+        padding-left: 1rem;
+
+        &--first-li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        & li {
+            margin-left: 2rem;
+        }
+    }
+
+}
+
+.manifiesto-div {
+    display: none;
+}
+
+.manifiesto-card {
+    display: none;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    border: 5px solid var(--color_C);
+    border-radius: 12px;
+
+
+}
+
+
+.accordion {
+    width: 90%;
+
+    &-body ol {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.manifiesto-boton {
+    display: none;
+    margin-top: 1rem;
+
+    &--acord {
+        margin-top: 1rem;
+    }
+}
+
+
+
+@media (min-width:1200px) {
+    .manifiesto {
+        &-div {
+            display: flex;
+
+        }
+
+        &-boton {
+            display: inline-block;
+        }
+
+        &-acordion {
+            display: none;
+        }
+    }
+}

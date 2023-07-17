@@ -1,0 +1,14 @@
+.form-contactanos {
+    max-width: 800px;
+    max-height: 370px;
+    margin-bottom: 3rem;
+    box-shadow: 10px 10px 10px 15px gray;
+    width: 90%;
+    padding: 0.5rem;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

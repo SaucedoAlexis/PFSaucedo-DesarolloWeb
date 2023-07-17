@@ -7,95 +7,111 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <title>DISI | Coaching profesional</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex gap-1" href="#">
-                    <img src="./img/DISI_logo.png" alt="" class="navbar-brand__img">
-                    <div class="titulo-nav d-grid">
-                        <h1 class="titulo-nav__h1 resetmarypad">
-                            <span class="letra-azul">D</span>I<span class="letra-roja">S</span>I
-                        </h1>
-                        <h2 class="titulo-nav__h2 resetmarypad">Coaching profesional</h2>
-                    </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="container maxw-768">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/LogoDISI.png" alt="" class="navbar-brand__img">
                 </a>
+
                 <button class="navbar-toggler resetmarypad" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link activo" aria-current="page" href="./index.html">Home</a>
                         <a class="nav-link" href="./pages/que_es.html">¿Coaching?</a>
                         <a class="nav-link" href="./pages/metodo.html">Método</a>
                         <a class="nav-link" href="./pages/quienes_somos.html">Sobre nosotros</a>
                         <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
                     </div>
                 </div>
+
             </div>
         </nav>
     </header>
     <main>
-        <section class="seccion-principal">
-            <h2>
-                <span>Do the</span>
-                <span>Imposible</span>
-                <span>See the</span>
-                <span>invisible</span>
-            </h2>
+        <section class="seccion-principal flex-en-columna flex-centrar">
+            <h1 class="titulo-principal flex-en-columna">
+                <span class="titulo-principal__1ro">Do the</span>
+                <span class="titulo-principal__2do">Imposible</span>
+                <span class="titulo-principal__3ro">See the</span>
+                <span class="titulo-principal__4to">invisible</span>
+            </h1>
             <img src="./img/hacerloimposible.jpg" alt="" class="imagen-principal">
         </section>
 
-        <section class="seccion-bienvenida">
-            <div class="bienvenida-textos">
+        <section class="centrar-caja seccion-bienvenida centrar-texto">
+            <div class="bienvenida-textos ">
                 <h2>¡Bienvenido a la página de coaching que necesitabas!</h2>
                 <p>¡Hola!, estás en la página de DISI una página de coaching profesional. Ofrecemos varios servicios de
                     coaching para distintos ambitos, ya sea el personal o el laboral.</p>
             </div>
-            <img src="" alt="">
+            
         </section>
 
-        <section class="seccion-potencial">
-            <h2>Descubrí con nosotros que tu potencial es infinito</h2>
-            <article>
-                <div class="potencial-div">
-                    <h3>Como lo vas a descubrir</h3>
-                    <p>En Disi tenemos un método en el cual te conoceremos, trazaremos tus objetivos y te ayudaremos a
-                        afrontar tus barreras. Este método está explicado en nuestro manifiesto llamado: "Trascendiendo
-                        límites: logrando lo impensable a través del coaching en profundidad" el cual podrás encontrar
+        <section class="seccion-potencial flex-en-columna flex-centrar ">
+            <h2 class="centrar-texto">Descubrí con nosotros que tu potencial es infinito</h2>
+            <article class="potencial-div padding-05 gap-05">
+                <div>
+                    <h3 class="potencial-div__h3--azul">Como lo vas a descubrir</h3>
+                    <p class="potencial-div__p">En Disi tenemos un método en el cual te conoceremos, trazaremos tus
+                        objetivos y te ayudaremos
+                        a
+                        afrontar tus barreras. Este método está explicado en nuestro manifiesto llamado:
+                        "Trascendiendo
+                        límites: logrando lo impensable a través del coaching en profundidad" el cual podrás
+                        encontrar
                         en el
                         botón debajo</p>
+                    <a href="./pages/quienes_somos.html" class="boton_azul">Manifiesto DISI</a>
                 </div>
-                <a href="./pages/servicio.html">Manifiesto DISI</a>
+                <img src="./img/potencial-descubrimiendo.jpg" alt="" class="potencial-div__img">
             </article>
-            <article>
-                <h3>Quienes te ayudaran</h3>
-                <p>Nuestro equipo está preparado en varias areas de conocimiento, ya sea el sector empresarial, salud,
-                    tecnología, entre otros. Gracias a esto y nuestros estudios pertinentes creamos el método DISI el
-                    cual utiliza nuestros saberes y los pone a disposición de nuestro cliente, conocenos en profundidad
-                    con el siguiente botón</p>
-                <a href="./pages/quienes_somos.html">Conocenos</a>
+            
+            <article class="potencial-div padding-05">
+                <div>
+                    <h3 class="potencial-div__h3--azul">Quienes te ayudaran</h3>
+                    <p class="potencial-div__p">Nuestro equipo está preparado en varias areas de conocimiento, ya sea el
+                        sector empresarial,
+                        salud,
+                        tecnología, entre otros. Gracias a esto y nuestros estudios pertinentes creamos el método DISI
+                        el
+                        cual utiliza nuestros saberes y los pone a disposición de nuestro cliente, conocenos en
+                        profundidad
+                        con el siguiente botón.</p>
+                    <a href="./pages/quienes_somos.html" class="boton_azul">Conocenos</a>
+                </div>
+                <img src="./img/potencial-ayudando.jpg" alt="" class="potencial-div__img">
             </article>
 
         </section>
 
-        <section class="seccion-testimonios">
-            <h2>Historia de nuestros clientes</h2>
+        <section class="seccion-testimonios flex-en-columna flex-centrar gap-05">
+            <h2 class="centrar-texto">Historia de nuestros clientes</h2>
+            <div class="testimonios-cards flex-en-columna flex-centrar gap-05">
             <article class="card-testimonio">
                 <p class="card-testimonio__texto">
                     "Gracias al coaching, he descubierto una nueva confianza en mí mismo. Mi coach me ha ayudado a
                     superar mis miedos y a establecer metas claras. Ahora estoy viviendo una vida más auténtica y plena.
                     ¡No puedo recomendarlo lo suficiente!"
                 </p>
+                <div class="card-testimonio__datos flex-en-linea">
+                    <img src="./img/testimonios/Ana-2.jpg" alt="" class="card-testimonio__img">
+                    <p class="card-testimonio__nombre">Ana <br> Abogada comercial</p>
 
-                <p class="card-testimonio__nombre">- Ana</p>
-                <img src="" alt="" class="card-testimonio__img">
+
+                </div>
             </article>
 
             <article class="card-testimonio">
@@ -104,8 +120,10 @@
                     herramientas y la motivación necesarias para alcanzar mis objetivos profesionales. Su apoyo
                     constante y su enfoque práctico han sido clave en mi crecimiento y éxito."
                 </p>
-                <p class="card-testimonio__nombre">- Carlos</p>
-                <img src="" alt="" class="card-testimonio__img">
+                <div class="card-testimonio__datos flex-en-linea">
+                    <img src="./img/testimonios/Carlos-2.jpg" alt="" class="card-testimonio__img">
+                    <p class="card-testimonio__nombre">Carlos <br> Arquitecto</p>
+                </div>
             </article>
             <article class="card-testimonio">
                 <p class="card-testimonio__texto">
@@ -113,8 +131,10 @@
                     conscientes. Mi coach me ha ayudado a identificar mis valores y a alinear mis acciones con ellos. Ha
                     sido un viaje de autodescubrimiento y crecimiento personal increíble."
                 </p>
-                <p class="card-testimonio__nombre">- Laura</p>
-                <img src="" alt="" class="card-testimonio__img">
+                <div class="card-testimonio__datos flex-en-linea">
+                    <img src="./img/testimonios/Laura-2.jpg" alt="" class="card-testimonio__img">
+                    <p class="card-testimonio__nombre">Laura <br> Profesora Universitaria</p>
+                </div>
             </article>
             <article class="card-testimonio">
                 <p class="card-testimonio__texto">
@@ -122,57 +142,61 @@
                     pensar en grande y a superar mis límites. Gracias a su orientación estratégica, he logrado alcanzar
                     metas que antes parecían inalcanzables. ¡El coaching realmente funciona!"
                 </p>
-                <p class="card-testimonio__nombre">- Andres</p>
-                <img src="" alt="" class="card-testimonio__img">
+                <div class="card-testimonio__datos flex-en-linea">
+                    <img src="./img/testimonios/Andres-2.jpg" alt="" class="card-testimonio__img">
+                    <p class="card-testimonio__nombre">Andres <br> Compositor</p>
+                </div>
             </article>
+        </div>
 
         </section>
 
-        <section class="seccion-contactanos">
-            <h2>Se parte de las personas que pasaron por DISI y cambiaron su vida</h2>
-            <a href="./pages/contactanos.html">Contactanos</a>
+        <section class="centrar-caja seccion-contactanos centrar-texto">
+            <h2 class="padding-2-arribajo">Se parte de las personas que pasaron por DISI y cambiaron su vida</h2>
+            <a href="./pages/contactanos.html" class="boton_rojo">Contactanos</a>
 
         </section>
     </main>
 
     <footer>
-        <div class="footer-titulo flex-en-linea">
+        <div class="centrar-caja footer-titulo flex-en-linea flex-centrar resetmarypad">
             <a href="./index.html">
                 <img src="./img/DISI_logo.png" alt="" class="footer-titulo__img">
             </a>
-            <h2 class="footer-titulo__h2 resetmarypad">DISI</h2>
+
 
 
         </div>
 
-        <p> Brindamos servicios de Coaching con la misión de llevar el éxito a todas las personas.
+        <p class="centrar-caja"> En DISI brindamos servicios de Coaching con la misión de llevar el éxito a todas las
+            personas.
 
             Lo hacemos mejorando constantemente el método DISI, brindando apoyo constante, planificación de objetivos,
             superación de barreras y progresión constante. </p>
         <h2>Encontranos en las redes</h2>
-        <ul class="footer-ul flex-en-linea resetmarypad">
+        <ul class="footer-ul flex-en-linea resetmarypad flex-centrar">
             <li>
-                <a href="">
+                <a href="https://www.facebook.com">
                     <img src="./img/iconos_redes_sociales/facebook.png" alt="" class="footer-ul__img">
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://www.instagram.com"">
                     <img src="./img/iconos_redes_sociales/instagram.png" alt="" class="footer-ul__img">
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://www.linkedin.com"">
                     <img src="./img/iconos_redes_sociales/LinkedIn_logo_initials.png" alt="" class="footer-ul__img">
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://www.twitter.com"">
                     <img src="./img/iconos_redes_sociales/twitter.png" alt="" class="footer-ul__img">
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="https://www.youtube.com"">
                     <img src="./img/iconos_redes_sociales/Youtube_logo.png" alt="" class="footer-ul__img youtube-icon">
                 </a>
             </li>
