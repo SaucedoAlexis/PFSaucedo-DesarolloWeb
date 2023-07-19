@@ -6,8 +6,15 @@
 
 .titulo-principal {
     width: 300px;
-
+    // Declaro animación
+    animation-name: fondo-animacion;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    
+    // xxxxxxxxxxxxxxxxx
     display: grid;
+    border-radius: 15px;
+    
     align-content: center;
     justify-content: center;
     grid-template-rows: repeat(4, 1fr);
@@ -42,6 +49,18 @@
     }
 }
 
+@keyframes fondo-animacion {
+    0%{
+        background:linear-gradient(to right,var(--color_A),var(--color_B))
+    }
+    50%{
+        background:linear-gradient(to left,var(--color_C),var(--color_D))
+    }
+    100%{
+        background:linear-gradient(to right,var(--color_E),var(--color_A))
+    }
+}
+
 .potencial-div{
     &__img{
         display: none;
@@ -55,11 +74,6 @@
         border-radius: 10px;
     }
 }
-
-
-
-
-
 
 
 .bienvenida-imagen{

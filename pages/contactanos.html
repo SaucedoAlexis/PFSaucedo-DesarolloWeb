@@ -7,15 +7,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>DISI | Coaching profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <meta name="Contactanos" content="Rellena el formulario para contactarnos y poder empezar a mejorar tu vida">
+    <title>DISI | contactanos</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container maxw-768">
-                <a class="navbar-brand" href="#">
-                    <img src="../img/LogoDISI.png" alt="" class="navbar-brand__img">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LogoDISI.png"
+                        alt="imagen de un taladro con un texto y sub texto que dice DISI y coaching profesional correspondientemente"
+                        class="navbar-brand__img">
                 </a>
 
                 <button class="navbar-toggler resetmarypad" type="button" data-bs-toggle="collapse"
@@ -43,37 +51,43 @@
             <form action="" class="form-contactanos flex-en-columna centrar-caja gap-05">
                 <div class="form-nombre">
                     <label for="nombrecompleto" class="form-nombre__nombre">Nombre:</label>
-                    <input type="text" name="nombrecompleto" placeholder="Ariel Alberto Gamarro" class="form-nombre__input">
+                    <input type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Ariel Alberto Gamarro"
+                        class="form-nombre__input">
                 </div>
                 <div>
                     <label for="edad">Edad:</label>
-                    <input type="number" name="edad" placeholder="Mayor a 18">
+                    <input type="number" name="edad" id="edad" placeholder="Mayor a 18">
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="ArielAlberto@gmail.com">
+                    <input type="email" name="email" id="email" placeholder="ArielAlberto@gmail.com"
+                        autocomplete="true">
                 </div>
                 <div class="form-numero flex-en-columna gap-05">
                     <label for="celular" class="form-numero__celular">Celular:</label>
-                    <select name="codigopais" id="" class="form-numero__select">
-                        <option value="">País</option>
+                    <select name="codigopais" id="celular" class="form-numero__select">
+                        <option value="default">País</option>
                         <option value="Argentina">Argentina(+54)</option>
                         <option value="Chile">Chile(+56)</option>
                         <option value="Uruguay">Uruguay(+598)</option>
 
                     </select>
-                    <input type="number" placeholder="Código de area">
-                    <input type="number" placeholder="numero celular">
+
+                    <input type="number" id="codigo_area" aria-label="numero código de area"
+                        placeholder="Código de area">
+
+
+                    <input type="number" id="numero_celular" aria-label="numero celular" placeholder="numero celular">
+
                 </div>
-                <input type="submit" value="Enviar!" class="boton_rojo resetmarypad centrar-caja">
+                <input type="submit" value="Enviar!" aria-label="Enviar formulario"
+                    class="boton_rojo resetmarypad centrar-caja">
             </form>
         </section>
     </main>
     <footer>
         <div class="centrar-caja footer-titulo flex-en-linea flex-centrar resetmarypad">
-            <a href="./index.html">
-                <img src="../img/DISI_logo.png" alt="" class="footer-titulo__img">
-            </a>
+
 
 
 
@@ -88,27 +102,32 @@
         <ul class="footer-ul flex-en-linea resetmarypad flex-centrar">
             <li>
                 <a href="https://www.facebook.com">
-                    <img src="../img/iconos_redes_sociales/facebook.png" alt="" class="footer-ul__img">
+                    <img src="../img/iconos_redes_sociales/facebook.png" alt="logo de facebook que consta de una f."
+                        class="footer-ul__img">
                 </a>
             </li>
             <li>
                 <a href="https://www.instagram.com"">
-                    <img src=" ../img/iconos_redes_sociales/instagram.png" alt="" class="footer-ul__img">
+                    <img src=" ../img/iconos_redes_sociales/instagram.png"
+                    alt="logo de instagram que consta de una silueta de una cámara." class="footer-ul__img">
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com"">
-                    <img src=" ../img/iconos_redes_sociales/LinkedIn_logo_initials.png" alt="" class="footer-ul__img">
+                    <img src=" ../img/iconos_redes_sociales/LinkedIn_logo_initials.png"
+                    alt="logo de linkedin que consta de una i y una n." class="footer-ul__img">
                 </a>
             </li>
             <li>
                 <a href="https://www.twitter.com"">
-                    <img src=" ../img/iconos_redes_sociales/twitter.png" alt="" class="footer-ul__img">
+                    <img src=" ../img/iconos_redes_sociales/twitter.png"
+                    alt="logo de twitter que consta de la silueta de un ave de perfil." class="footer-ul__img">
                 </a>
             </li>
             <li>
                 <a href="https://www.youtube.com"">
-                    <img src=" ../img/iconos_redes_sociales/Youtube_logo.png" alt=""
+                    <img src=" ../img/iconos_redes_sociales/Youtube_logo.png"
+                    alt="logo de youtube que consta de un boton de play en el centro y rodeada de una caja con bordes un poco redondeados."
                     class="footer-ul__img youtube-icon">
                 </a>
             </li>

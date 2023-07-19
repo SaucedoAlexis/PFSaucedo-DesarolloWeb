@@ -8,6 +8,11 @@
     --color_fondo: #fff;
 }
 
+/* variables de media queries*/
+$media_A: 480px;
+$media_B: 768px;
+$media_C: 1200px;
+/****************************/
 
 * {
     margin: 0;
@@ -16,42 +21,14 @@
     font-family: var(--fuente);
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-h1 {
-    font-size: 2.3rem;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 1.75rem;
-    font-weight: 500;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
-}
-
-.centrar-texto {
-    text-align: center;
-}
-
-
 ul,
 ol {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 input[type="number"] {
@@ -61,9 +38,18 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+h2 {
+    padding: 1rem 0;
+}
+
+/* clases para arreglos fijos y rápidos en el html */
 .resetmarypad {
     margin: 0;
     padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
 }
 
 .letra-roja {
@@ -75,14 +61,27 @@ input[type="number"] {
     color: var(--color_B);
 }
 
+.ancho-max-1200 {
+    max-width: 1200px;
+}
+
+.ancho-90 {
+    max-width: 90%;
+}
+
+/****************************/
+
+/* Centrado de caja para cajas que no están bajo flex*/
+.centrar-caja {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/****************************/
+/* clases para flex y modificadores*/
 .flex-en-linea {
     display: flex;
     flex-direction: row;
-}
-
-
-.ancho-max-1200{
-    max-width: 1200px;
 }
 
 .flex-en-columna {
@@ -95,97 +94,75 @@ input[type="number"] {
     justify-content: center;
 }
 
-.centrar-caja {
-    width: 90%;
-    margin: 0 auto;
-}
-
 .gap-05 {
     gap: 0.5rem;
 }
 
-.padding-05{
+/****************************/
+/* Paddings predeterminados*/
+
+.padding-05 {
     padding: 0.5rem;
 }
 
-.padding-2-arribajo{
+.padding-2-arribajo {
     padding: 2rem 0;
 }
 
-.padding-05-derizq{
+.padding-05-derizq {
     padding: 0 0.5rem;
 }
 
+/****************************/
 
-.maxw-768{
-    max-width: 768px;
+/* Animación*/
+
+
+
+
+/****************************/
+
+
+
+
+/* Modifacores títulos, textos*/
+
+@mixin modificador-texto($font-size: 1rem, $font-weight: 500) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+
+    @media (min-width:$media_A) {
+        font-size: $font-size + 0.3;
+
+    }
+
+    @media (min-width: $media_B) {
+        font-size: $font-size + 0.5;
+    }
+
+    @media (min-width: $media_C) {
+        font-size: $font-size + 1;
+    }
+
 }
 
-.ancho-90{
-    max-width: 90%;
+h1 {
+    @include modificador-texto(2rem, 700)
 }
 
-@media (min-width:480px){
-    
-    h1 {
-        font-size: 3.12rem;
-        
-    }
-    
-    h2 {
-        font-size: 2.5rem;
-        
-    }
-    
-    h3 {
-        font-size: 2.25rem;
-        
-    }
-    
-    h4 {
-        font-size: 1.75rem;
-    }
-    
-    p,a {
-        font-size: 1.25rem;
-    }
-
-    
+h2 {
+    @include modificador-texto(1.8rem, 600)
 }
 
-@media (min-width:768px){
-    
-    h1 {
-        font-size: 3rem;
-        
-    }
-    
-    h2 {
-        font-size: 2.5rem;
-        
-    }
-    
-    h3 {
-        font-size: 3rem;
-        
-    }
-    
-    h4 {
-        font-size: 2.5rem;
-    }
-    
-    p,a {
-        font-size: 2rem;
-    }
-
-    .grid-2-2{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
-    }
-    
+h3 {
+    @include modificador-texto(1.6rem, 500)
 }
 
-@media (min-width:1200px) {
-    
+h4 {
+    @include modificador-texto(1.4rem)
+}
+
+p,
+a {
+    @include modificador-texto()
 }

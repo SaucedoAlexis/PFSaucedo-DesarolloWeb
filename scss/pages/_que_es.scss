@@ -3,14 +3,12 @@
     max-width: 700px;
 }
 
-.tipo-coaching-article__img {
-    display: none;
-}
 
 
 .tipo-coaching-article {
     padding: 0 1rem;
     width: 90%;
+    
 
     &__div {
         background: linear-gradient(to right, var(--color_D), var(--color_E) 60%);
@@ -86,9 +84,7 @@
     }
 
     /*Segunda sección*/
-    .tipos-coaching-div{
-        
-    }
+ 
     .tipo-coaching-article{
         max-width: 1000px;
     }
